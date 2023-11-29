@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: grid;
+    grid: 1fr / 1fr; 
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.201);
+    padding: 3rem;
+    border-radius:10px;
+    background-color: white;
+    margin: auto;
+    max-width: 300px;
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+    padding: 10px;
+    font-weight: 500;
+}
+
+input {
+    padding: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.402);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 2rem;
+    border: 2px solid rgba(128, 128, 128, 0.402);
+    border-radius: 5px;
+    background-color: rgba(2, 182, 65, 0.9);
+    color: white;
+    font-size: 1.25rem;
+}
+
+button:hover {
+    background-color:rgb(2, 182, 65) ;
+    cursor: pointer;
+}
+
+#takeout, #remaining {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+#amount-deducted {
+    color: red;
+}
+
+#total-remaining {
+    color: green;
+}
